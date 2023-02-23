@@ -6,7 +6,7 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <div id="main">
+        <div id="main_1">
             <script>
                 "use strict";
                 let product_1 = prompt("Введите наименование первого товара:");
@@ -15,6 +15,7 @@
                 let product_2 = prompt("Введите наименование второго товара:");
                 let count_2 = parseInt(prompt("Введите количество второго товара:"));
                 let price_2 = parseInt(prompt("Введите цену второго товара:"));
+                let discount = parseInt(prompt("Введите скидку (от 0 до 5):"));
                 document.write('ООО "Евроторг"');
                 document.write('<p class="th">СПАСИБО ЗА ПОКУПКУ!</p>');
                 let date = new Date().toLocaleString();
@@ -24,9 +25,16 @@
                 document.write('<br><span class="left">' + count_1.toFixed(2) + '</span><span class="right"> = ' + sum_1.toFixed(2) + '</span>');
                 document.write('<br>' + product_2);
                 let sum_2 = count_2 * price_2;
-                document.write('<br><span class="left">' + count_2.toFixed(2) + '</span><span class="right"> = ' + sum_2.toFixed(2) + '</span></p>');
-                document.write('<p><b>ИТОГО</b></p>');
-                
+                document.write('<br><span class="left">' + count_2.toFixed(2) + '</span><span class="right"> = ' + sum_2.toFixed(2) + '</span><br></p>');
+                document.write('<p><b>ИТОГО</b>');
+                let sum = sum_1 + sum_2;
+                document.write('<span class="right"><b>' + sum.toFixed(2) + '</b></span>');
+                let discountAmount = discount / 100 * sum;
+                document.write('<br>Ваша скидка: ' + discount + '%');
+                document.write('<span class="right">' + discountAmount.toFixed(2) + '</span>');
+                document.write('<br><b>СУММА СО СКИДКОЙ</b>');
+                let total = sum - discountAmount;
+                document.write('<span class="right"><b>' + total.toFixed(2) + '</b></span><br></p>');
             </script>
         </div>
     </body>
