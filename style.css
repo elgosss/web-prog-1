@@ -1,3 +1,6 @@
+#main {
+    text-align: center;
+}
 #main_1 {
     margin: auto;
     width: 20em;
@@ -16,4 +19,7 @@
 }
 .right {
     float: right;
+}
+#main_2 {
+    margin: 20px;
 }

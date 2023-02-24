@@ -10,12 +10,12 @@
             <script>
                 "use strict";
                 let product_1 = prompt("Введите наименование первого товара:");
-                let count_1 = parseInt(prompt("Введите количество первого товара:"));
-                let price_1 = parseInt(prompt("Введите цену первого товара:"));
+                let count_1 = parseFloat(prompt("Введите количество первого товара:"));
+                let price_1 = parseFloat(prompt("Введите цену первого товара:"));
                 let product_2 = prompt("Введите наименование второго товара:");
-                let count_2 = parseInt(prompt("Введите количество второго товара:"));
-                let price_2 = parseInt(prompt("Введите цену второго товара:"));
-                let discount = parseInt(prompt("Введите скидку (от 0 до 5):"));
+                let count_2 = parseFloat(prompt("Введите количество второго товара:"));
+                let price_2 = parseFloat(prompt("Введите цену второго товара:"));
+                let discount = parseFloat(prompt("Введите скидку (от 0 до 5):"));
                 document.write('ООО "Евроторг"');
                 document.write('<p class="th">СПАСИБО ЗА ПОКУПКУ!</p>');
                 let date = new Date().toLocaleString();
