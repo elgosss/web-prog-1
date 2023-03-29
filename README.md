@@ -1,2 +1,2 @@
-web-prog-1
+# web-prog-1
 Введение в JavaScript
